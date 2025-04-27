@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+//images.domains is deprecated. use remotePatterns instead.
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
