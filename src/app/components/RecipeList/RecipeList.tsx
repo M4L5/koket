@@ -19,6 +19,9 @@ interface Recipe {
     profiles: {
         name: string;
     }[];
+    source: {
+        sponsored: boolean;
+    };
 }
 
 
@@ -57,7 +60,7 @@ const RecipeList = () => {
                     alt={recipe.image.name}
                     dishTitle={recipe.name}
                     chef={recipe.profiles?.[0]?.name || null} 
-                    sponsored={false}
+                    sponsored={recipe.source?.sponsored || false }
                     type={recipe.type}
                 />
             ))}

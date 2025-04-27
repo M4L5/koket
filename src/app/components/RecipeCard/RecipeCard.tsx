@@ -21,7 +21,9 @@ const RecipeCard = ({ src, alt, dishTitle, chef, sponsored, type }: RecipeCardPr
                 <span className={styles.tags}>
                     { type === "recipe" ? "Recept" : "Artikel" }
                 </span>
-                { sponsored ? <span>Sponsrad</span> : null }
+                { sponsored && ( 
+                    <span className={styles.sponsored}>Sponsrad</span> 
+                )}
             </div>
             <Image src={src} alt={alt} height={400} width={300}/>
             <div className={styles.recipeWrapper}>
