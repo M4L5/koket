@@ -1,25 +1,24 @@
 .listContainer {
-    display: grid;
-    grid-template-columns: 1fr; /* En kolumn på mobil */
-    margin: 2rem;
-    align-items: center;
-    background-color: #efe9e6;
-    justify-content: center; 
-  }
+  display: grid;
+  grid-template-columns: 1fr; /* En kolumn på mobil */
+  margin: 2rem;
+  align-items: center;
+  background-color: #efe9e6;
+  justify-content: center; 
+}
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .listContainer {
-      grid-template-columns: repeat(2, 1fr); /* 2 kolumner på tablet */
-      margin-bottom: 1rem;
-      gap: 1.5rem;
-
-    }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .listContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolumner på tablet */
+    margin-bottom: 1rem;
+    gap: 1.5rem;
   }
+}
   
-  @media (min-width: 1025px) {
-    .listContainer {
-      grid-template-columns: repeat(4, 1fr); /* 4 kolumner på desktop */
-      margin-bottom: 1rem;
-      gap: 1.5rem;
-    }
+@media (min-width: 1025px) {
+  .listContainer {
+    grid-template-columns: repeat(4, 1fr); /* 4 kolumner på desktop */
+    margin-bottom: 1rem;
+    gap: 1.5rem;
   }
+}
