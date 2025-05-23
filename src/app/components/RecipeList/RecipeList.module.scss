@@ -11,6 +11,8 @@
     .listContainer {
       grid-template-columns: repeat(2, 1fr); /* 2 kolumner på tablet */
       margin-bottom: 1rem;
+      gap: 1.5rem;
+
     }
   }
   
@@ -18,5 +20,6 @@
     .listContainer {
       grid-template-columns: repeat(4, 1fr); /* 4 kolumner på desktop */
       margin-bottom: 1rem;
+      gap: 1.5rem;
     }
   }

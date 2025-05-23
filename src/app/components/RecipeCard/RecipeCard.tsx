@@ -25,7 +25,10 @@ const RecipeCard = ({ src, alt, dishTitle, chef, sponsored, type }: RecipeCardPr
                     <span className={styles.sponsored}>Sponsrad</span> 
                 )}
             </div>
-            <Image src={src} alt={alt} height={400} width={300}/>
+            <div className={styles.imgWrapper}>
+                <Image src={src} alt={alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+            </div>
+            
             <div className={styles.recipeWrapper}>
                 <h2>{dishTitle}</h2>
                 <span>{chef}</span>
